@@ -1,1 +1,4 @@
-design.lnk
+node_modules/
+gulpfile.js
+*.lnk
+*.vscode

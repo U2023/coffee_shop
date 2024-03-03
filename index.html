@@ -4,11 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
     <link rel="stylesheet" href="./css/destyle.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title></title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>倉本珈琲</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div>
+        <h1 id="logo" class="clearText">倉本珈琲</h1>
+        <img id="fv" src="./image/fv.png" alt="header" />
+        <img id="beans" src="./image/coffee_beans.png" alt="珈琲豆のオンライン通販はじめました" />
+      </div>
+      <menu>
+        <li onclick="location.href='#'"><img src="./image/bean.png" alt="ホーム" /><br />ホーム</li>
+        <li onclick="location.href='#concept'">
+          <img src="./image/bean.png" alt="こだわり" /><br />こだわり
+        </li>
+        <li onclick="location.href='#'">
+          <img src="./image/bean.png" alt="おいしい淹れ方" /><br />おいしい淹れ方
+        </li>
+        <li onclick="location.href='#'"><img src="./image/bean.png" alt="商品" /><br />商品</li>
+        <li onclick="location.href='#'">
+          <img src="./image/bean.png" alt="店舗情報" /><br />店舗情報
+        </li>
+      </menu>
+    </header>
+    <section id="concept">
+      <div class="column">
+        <img src="./image/kuramoto_blend.png" alt="concept" />
+        <div>
+          <h2>自分だけの珈琲に出会う。</h2>
+          <p>
+            当店は独自ブレンドに力を入れており、数多くのブレンド商品を用意しています。<br />
+            もちろん、世界のあらゆる産地のシングル商品の取り扱いもしています。<br />
+            きっと、あなただけの珈琲が見つかるでしょう。
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
 </html>
 <script src="./js/main.js"></script>

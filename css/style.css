@@ -1,1 +1,90 @@
-@charset "UTF-8";
+html {
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  background: url("../image/background.png");
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+header div h1 {
+  position: relative;
+  bottom: 280px;
+  width: 112px;
+  height: 112px;
+  background: url("../image/logo.png");
+  color: #222;
+  cursor: pointer;
+  margin-right: 3em;
+}
+header div h1:hover {
+  opacity: 0.9;
+}
+header div img#fv {
+  margin-right: 3em;
+}
+header div img#beans {
+  position: relative;
+  bottom: -7em;
+  width: 260px;
+  height: 400px;
+  z-index: -1;
+}
+header menu {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+  line-height: 2em;
+}
+header menu li {
+  list-style: none;
+  margin-right: 4em;
+  cursor: pointer;
+  text-align: center;
+}
+header menu li img:hover {
+  opacity: 1;
+}
+header menu li img {
+  opacity: 0;
+}
+
+section#concept {
+  background-color: #1e1e1e;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-style: normal;
+  color: #f3f0d3;
+  line-height: 1.5em;
+  padding: 20px;
+}
+section#concept .column {
+  width: 840px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section#concept .column img {
+  cursor: pointer;
+}
+section#concept .column img:hover {
+  opacity: 0.9;
+}
+section#concept h2 {
+  margin: 30px;
+  font-size: 2.3em;
+}
+section#concept p {
+  font-size: 1em;
+  margin: 30px;
+}
+
+.clearText {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}/*# sourceMappingURL=style.css.map */
