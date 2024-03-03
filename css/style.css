@@ -1,64 +1,129 @@
 html {
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.6rem;
   font-family: "Noto Sans JP", sans-serif;
   background: url("../image/background.png");
 }
 
-header div {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+@media (min-width: 400px) and (max-width: 800px) {
+  header {
+    display: none;
+  }
 }
-header div h1 {
-  position: relative;
-  bottom: 280px;
-  width: 112px;
-  height: 112px;
-  background: url("../image/logo.png");
-  color: #222;
-  cursor: pointer;
-  margin-right: 3em;
+@media (min-width: 800px) and (max-width: 1200px) {
+  header {
+    width: 800px;
+    margin: 0 auto;
+  }
+  header div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  header div h1 {
+    position: absolute;
+    top: 1rem;
+    width: 112px;
+    height: 112px;
+    background: url("../image/logo.png");
+    color: #222;
+    cursor: pointer;
+  }
+  header div h1:hover {
+    opacity: 0.9;
+  }
+  header div img#fv {
+    margin-left: 240px;
+  }
+  header div img#beans {
+    position: absolute;
+    width: 260px;
+    height: 400px;
+    top: 120px;
+    z-index: -1;
+  }
+  header menu {
+    width: 100%;
+    margin: 1em 0 1em 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    line-height: 2em;
+  }
+  header menu li {
+    list-style: none;
+    margin-right: 3em;
+    cursor: pointer;
+    text-align: center;
+  }
+  header menu li img:hover {
+    opacity: 1;
+  }
+  header menu li img {
+    opacity: 0;
+  }
 }
-header div h1:hover {
-  opacity: 0.9;
+@media (min-width: 1200px) {
+  header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  header div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  header div h1 {
+    position: relative;
+    bottom: 280px;
+    width: 112px;
+    height: 112px;
+    background: url("../image/logo.png");
+    color: #222;
+    cursor: pointer;
+    margin-right: 3em;
+  }
+  header div h1:hover {
+    opacity: 0.9;
+  }
+  header div img#fv {
+    margin-right: 3em;
+  }
+  header div img#beans {
+    position: relative;
+    bottom: -7em;
+    width: 260px;
+    height: 400px;
+    z-index: -1;
+  }
+  header menu {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    line-height: 2em;
+  }
+  header menu li {
+    list-style: none;
+    margin-right: 4em;
+    cursor: pointer;
+    text-align: center;
+  }
+  header menu li img:hover {
+    opacity: 1;
+  }
+  header menu li img {
+    opacity: 0;
+  }
 }
-header div img#fv {
-  margin-right: 3em;
-}
-header div img#beans {
-  position: relative;
-  bottom: -7em;
-  width: 260px;
-  height: 400px;
-  z-index: -1;
-}
-header menu {
-  margin: 1em 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5em;
-  line-height: 2em;
-}
-header menu li {
-  list-style: none;
-  margin-right: 4em;
-  cursor: pointer;
-  text-align: center;
-}
-header menu li img:hover {
-  opacity: 1;
-}
-header menu li img {
-  opacity: 0;
-}
-
 section#concept {
+  width: 100%;
   background-color: #1e1e1e;
   font-family: a-otf-ryumin-pr6n, serif;
   font-style: normal;
   color: #f3f0d3;
-  line-height: 1.5em;
   padding: 20px;
 }
 section#concept .column {
@@ -83,8 +148,95 @@ section#concept p {
   margin: 30px;
 }
 
-.clearText {
+section.commitment {
+  width: 840px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.commitment div {
+  width: 400px;
+}
+section.commitment div h2 {
+  font-size: 30px;
+  line-height: 60px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #817a3a;
+}
+section.commitment div div {
+  margin-bottom: 30px;
+}
+section.commitment img {
+  width: 400px;
+}
+section.commitment > *:last-child {
+  margin-left: 40px;
+}
+section.commitment ul.button li {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section.complement {
+  width: 840px;
+  margin: 60px auto;
+}
+section.complement div.text_right {
+  text-align: right;
+}
+
+.clear_text {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
+}
+
+button {
+  width: 230px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #b7b17f;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+button.article,
+button.youtube {
+  display: block;
+  width: 230px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #b7b17f;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+button.article::before {
+  content: url("../image/ion_book.png");
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.7em;
+}
+
+button.youtube::before {
+  content: url("../image/mdi_youtube.png");
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.6em;
+}
+
+button.reserve::before {
+  content: url("../image/calender.png");
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.6em;
+}
+
+ul.square {
+  margin: 0 0 1em 2em;
+}
+ul.square li {
+  line-height: 2em;
+  list-style: square;
 }/*# sourceMappingURL=style.css.map */
