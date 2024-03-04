@@ -158,13 +158,13 @@ section.commitment {
 section.commitment div {
   width: 400px;
 }
-section.commitment div h2 {
+section.commitment div h3 {
   font-size: 30px;
   line-height: 60px;
   margin-bottom: 30px;
   border-bottom: 2px solid #817a3a;
 }
-section.commitment div div {
+section.commitment div p {
   margin-bottom: 30px;
 }
 section.commitment img {
@@ -182,8 +182,60 @@ section.complement {
   width: 840px;
   margin: 60px auto;
 }
+section.complement h3 {
+  font-size: 30px;
+  line-height: 60px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #817a3a;
+}
 section.complement div.text_right {
   text-align: right;
+}
+
+section#products {
+  width: 1200px;
+  margin: auto;
+}
+section#products h3 {
+  font-size: 30px;
+  line-height: 60px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #817a3a;
+}
+section#products .products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+section#products .products div.product {
+  width: 250px;
+}
+section#products .products div.product h4 {
+  font-weight: bold;
+  margin-top: 1em;
+}
+section#products .products div.product .price {
+  margin-bottom: 1em;
+}
+section#products .products div.product label.yen {
+  padding: 0 0.4em;
+}
+section#products .products::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 64px;
+  background: url(../image/arrow_l.png) no-repeat;
+  cursor: pointer;
+}
+section#products .products::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 64px;
+  background: url(../image/arrow_r.png) no-repeat;
+  cursor: pointer;
 }
 
 .clear_text {
@@ -239,4 +291,10 @@ ul.square {
 ul.square li {
   line-height: 2em;
   list-style: square;
+}
+
+input {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 0.5em;
 }/*# sourceMappingURL=style.css.map */

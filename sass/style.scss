@@ -169,13 +169,13 @@ section.commitment {
   align-items: center;
   div {
     width: 400px;
-    h2 {
+    h3 {
       font-size: 30px;
       line-height: 60px;
       margin-bottom: 30px;
       border-bottom: 2px solid #817a3a;
     }
-    div {
+    p {
       margin-bottom: 30px;
     }
   }
@@ -194,8 +194,63 @@ section.commitment {
 section.complement {
   width: 840px;
   margin: 60px auto;
+  h3 {
+    font-size: 30px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #817a3a;
+  }
   div.text_right {
     text-align: right;
+  }
+}
+
+section#products {
+  width: 1200px;
+  margin: auto;
+  h3 {
+    font-size: 30px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #817a3a;
+  }
+  .products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    div.product {
+      width: 250px;
+      //margin-right: 30px;
+      h4 {
+        font-weight: bold;
+        margin-top: 1em;
+      }
+      .price {
+        margin-bottom: 1em;
+      }
+      label.yen {
+        padding: 0 0.4em;
+      }
+    }
+  }
+
+  .products::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 64px;
+    background: url(../image/arrow_l.png) no-repeat;
+    cursor: pointer;
+  }
+
+  .products::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 64px;
+    background: url(../image/arrow_r.png) no-repeat;
+    cursor: pointer;
   }
 }
 
@@ -252,4 +307,10 @@ ul.square {
     line-height: 2em;
     list-style: square;
   }
+}
+
+input {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 0.5em;
 }
