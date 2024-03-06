@@ -5,14 +5,72 @@ html {
   background: url("../image/background.png");
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+//header
+@media (min-width: 375px) and (max-width: 768px) {
   header {
-    display: none;
-    //要検討
+    width: 100%;
+    margin: 0 auto;
+    div {
+      // ロゴの表示
+      h1 {
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        width: 112px;
+        height: 112px;
+        background: url("../image/logo_s.png");
+        color: #222;
+        cursor: pointer;
+        // margin-right: 3em;
+      }
+      h1:hover {
+        opacity: 0.9;
+      }
+      img#fv {
+        margin-top: 0px;
+        width: 100%;
+      }
+      img#beans {
+        display: none;
+      }
+    }
+    > div::after {
+      display: block;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-family: serif;
+      margin: 1em 0;
+      content: "オンライン通販 はじめました。";
+    }
+    menu {
+      margin: 0;
+      padding: 0;
+      line-height: 4em;
+      li {
+        color: #f3f0d3;
+        display: block;
+        height: 4em;
+        list-style: none;
+        cursor: pointer;
+        text-align: center;
+        background-color: #1e1e1e;
+        border-bottom: 1px solid #f3f0d350;
+      }
+      li img {
+        display: none;
+      }
+      li br {
+        display: none;
+      }
+      li:hover {
+        opacity: 0.9;
+      }
+    }
   }
 }
-
-@media (min-width: 800px) and (max-width: 1200px) {
+//header
+@media (min-width: 768px) and (max-width: 1200px) {
   header {
     width: 800px;
     margin: 0 auto;
@@ -69,7 +127,6 @@ html {
     }
   }
 }
-
 // header
 @media (min-width: 1200px) {
   header {
@@ -254,7 +311,7 @@ section#products {
 
 section#info {
   width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
   h3 {
     font-size: 30px;
     line-height: 60px;
@@ -279,6 +336,70 @@ section#info {
   }
   p.icon img {
     margin-right: 0.4em;
+    cursor: pointer;
+  }
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #f3f0d3;
+  > div.main_foot_menu {
+    width: 600px;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .logo_f {
+      width: 80px;
+    }
+    ul {
+      line-height: 2em;
+      li {
+        cursor: pointer;
+      }
+      li img:hover {
+        opacity: 1;
+      }
+      li img {
+        opacity: 0;
+      }
+    }
+    .address_f {
+      border-left: 1px solid #f3f0d350;
+      padding-left: 1em;
+      margin: 0 0 1em 1em;
+      p {
+        margin: 1em 0;
+      }
+    }
+    div p.icon img {
+      margin-right: 0.4em;
+      cursor: pointer;
+    }
+  }
+  > div.sub_foot_menu {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    ul {
+      border-top: 1px solid #f3f0d350;
+      border-bottom: 1px solid #f3f0d350;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      li {
+        margin: 1em 4em;
+        cursor: pointer;
+      }
+    }
+    p {
+      margin: 4em;
+    }
+  }
+  div.sub_foot_menu::after {
+    content: "_";
+    color: #1e1e1e;
   }
 }
 

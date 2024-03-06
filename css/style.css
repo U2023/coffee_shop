@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 15px;
   line-height: 1.6rem;
@@ -5,12 +6,66 @@ html {
   background: url("../image/background.png");
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 375px) and (max-width: 768px) {
   header {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header div h1 {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    width: 112px;
+    height: 112px;
+    background: url("../image/logo_s.png");
+    color: #222;
+    cursor: pointer;
+  }
+  header div h1:hover {
+    opacity: 0.9;
+  }
+  header div img#fv {
+    margin-top: 0px;
+    width: 100%;
+  }
+  header div img#beans {
     display: none;
   }
+  header > div::after {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: serif;
+    margin: 1em 0;
+    content: "オンライン通販 はじめました。";
+  }
+  header menu {
+    margin: 0;
+    padding: 0;
+    line-height: 4em;
+  }
+  header menu li {
+    color: #f3f0d3;
+    display: block;
+    height: 4em;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid rgba(243, 240, 211, 0.3137254902);
+  }
+  header menu li img {
+    display: none;
+  }
+  header menu li br {
+    display: none;
+  }
+  header menu li:hover {
+    opacity: 0.9;
+  }
 }
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   header {
     width: 800px;
     margin: 0 auto;
@@ -240,7 +295,7 @@ section#products .products::after {
 
 section#info {
   width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 section#info h3 {
   font-size: 30px;
@@ -266,6 +321,70 @@ section#info h4 {
 }
 section#info p.icon img {
   margin-right: 0.4em;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #f3f0d3;
+}
+footer > div.main_foot_menu {
+  width: 600px;
+  margin: 0 auto;
+  padding: 60px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer > div.main_foot_menu .logo_f {
+  width: 80px;
+}
+footer > div.main_foot_menu ul {
+  line-height: 2em;
+}
+footer > div.main_foot_menu ul li {
+  cursor: pointer;
+}
+footer > div.main_foot_menu ul li img:hover {
+  opacity: 1;
+}
+footer > div.main_foot_menu ul li img {
+  opacity: 0;
+}
+footer > div.main_foot_menu .address_f {
+  border-left: 1px solid rgba(243, 240, 211, 0.3137254902);
+  padding-left: 1em;
+  margin: 0 0 1em 1em;
+}
+footer > div.main_foot_menu .address_f p {
+  margin: 1em 0;
+}
+footer > div.main_foot_menu div p.icon img {
+  margin-right: 0.4em;
+  cursor: pointer;
+}
+footer > div.sub_foot_menu {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer > div.sub_foot_menu ul {
+  border-top: 1px solid rgba(243, 240, 211, 0.3137254902);
+  border-bottom: 1px solid rgba(243, 240, 211, 0.3137254902);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer > div.sub_foot_menu ul li {
+  margin: 1em 4em;
+  cursor: pointer;
+}
+footer > div.sub_foot_menu p {
+  margin: 4em;
+}
+footer div.sub_foot_menu::after {
+  content: "_";
+  color: #1e1e1e;
 }
 
 .clear_text {
