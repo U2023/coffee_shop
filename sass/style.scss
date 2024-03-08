@@ -1,4 +1,5 @@
 html {
+  color: #222;
   font-size: 15px;
   line-height: 1.6rem;
   font-family: "Noto Sans JP", sans-serif;
@@ -106,8 +107,8 @@ img {
       display: block;
       text-align: center;
       font-size: 1.2rem;
-      font-weight: bold;
       font-family: a-otf-ryumin-pr6n, serif;
+      font-style: normal;
       margin: 1em 0;
       content: "珈琲豆のオンライン通販、はじめました。";
     }
@@ -369,5 +370,77 @@ img {
       content: "_";
       color: #1e1e1e;
     }
+  }
+
+  menu#menu li {
+    display: none;
+  }
+  button#toggle-menu {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    cursor: pointer;
+    margin: 1em;
+  }
+
+  .open-line::before {
+    position: relative;
+    top: 0px;
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 30px;
+    height: 2px;
+    z-index: 2;
+  }
+
+  .open-line div::after {
+    position: relative;
+    top: 8px;
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 30px;
+    height: 2px;
+    z-index: 2;
+  }
+
+  .open-line::after {
+    position: relative;
+    top: 16px;
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 30px;
+    height: 2px;
+    z-index: 2;
+  }
+
+  .close-line::before {
+    position: relative;
+    top: 7px;
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 32px;
+    height: 2px;
+    z-index: 2;
+    transform: rotate(45deg);
+  }
+
+  .close-line::after {
+    position: relative;
+    top: 5px;
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 32px;
+    height: 2px;
+    z-index: 2;
+    transform: rotate(135deg);
   }
 }
