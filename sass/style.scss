@@ -386,7 +386,7 @@ img {
     height: 24px;
     background: transparent;
     cursor: pointer;
-    margin: 1em;
+    margin: 1.5em auto;
   }
 
   .open-line::before {
@@ -394,42 +394,42 @@ img {
     top: 0px;
     content: "";
     display: block;
-    background-color: #333;
+    background-color: #1e1e1e;
     width: 30px;
-    height: 2px;
+    height: 3px;
     z-index: 2;
   }
 
   .open-line div::after {
     position: relative;
-    top: 8px;
+    top: 7px;
     content: "";
     display: block;
-    background-color: #333;
+    background-color: #1e1e1e;
     width: 30px;
-    height: 2px;
+    height: 3px;
     z-index: 2;
   }
 
   .open-line::after {
     position: relative;
-    top: 16px;
+    top: 14px;
     content: "";
     display: block;
-    background-color: #333;
+    background-color: #1e1e1e;
     width: 30px;
-    height: 2px;
+    height: 3px;
     z-index: 2;
   }
 
   .close-line::before {
     position: relative;
-    top: 7px;
+    top: 8px;
     content: "";
     display: block;
-    background-color: #333;
+    background-color: #1e1e1e;
     width: 32px;
-    height: 2px;
+    height: 3px;
     z-index: 2;
     transform: rotate(45deg);
   }
@@ -439,9 +439,9 @@ img {
     top: 5px;
     content: "";
     display: block;
-    background-color: #333;
+    background-color: #1e1e1e;
     width: 32px;
-    height: 2px;
+    height: 3px;
     z-index: 2;
     transform: rotate(135deg);
   }
