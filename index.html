@@ -7,6 +7,8 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/destyle.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style768.css" />
+    <link rel="stylesheet" href="./css/style1200.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,17 +26,11 @@
         <img id="beans" src="./image/coffee_beans.png" alt="珈琲豆のオンライン通販はじめました" />
       </div>
       <menu>
-        <li onclick="location.href='#'"><img src="./image/bean.png" alt="ホーム" /><br />ホーム</li>
-        <li onclick="location.href='#concept'">
-          <img src="./image/bean.png" alt="こだわり" /><br />こだわり
-        </li>
-        <li onclick="location.href='#'">
-          <img src="./image/bean.png" alt="おいしい淹れ方" /><br />おいしい淹れ方
-        </li>
-        <li onclick="location.href='#'"><img src="./image/bean.png" alt="商品" /><br />商品</li>
-        <li onclick="location.href='#'">
-          <img src="./image/bean.png" alt="店舗情報" /><br />店舗情報
-        </li>
+        <li onclick="location.href='#'">ホーム</li>
+        <li onclick="location.href='#commitment'">こだわり</li>
+        <li onclick="location.href='#'">おいしい淹れ方</li>
+        <li onclick="location.href='#products'">商品</li>
+        <li onclick="location.href='#info'">店舗情報</li>
       </menu>
     </header>
     <section id="concept">
@@ -50,7 +46,7 @@
         </div>
       </div>
     </section>
-    <section class="commitment">
+    <section id="commitment" class="commitment">
       <div>
         <h3>倉本珈琲のこだわり</h3>
         <p>
@@ -60,16 +56,16 @@
           本当においしい珈琲を求める方におすすめします。
         </p>
       </div>
-      <img src="image/commitment.png" alt="commitment" />
+      <img src="image/commitment.png" alt="commitment" class="commitment_r" />
     </section>
     <section class="commitment">
-      <img src="image/how_to_brew.png" alt="commitment" />
+      <img src="image/how_to_brew.png" alt="commitment" class="commitment_l" />
       <div>
         <h3>おいしい淹れ方教えます</h3>
         <div>
           <ul class="square">
-            <li>おいしい珈琲の淹れ方が分からない</li>
-            <li>どんな珈琲が自分に合うか分からない</li>
+            <li>おいしい珈琲の淹れ方が分からない…</li>
+            <li>どんな珈琲が自分に合うか分からない…</li>
           </ul>
           <p>そんな方でも大丈夫。 珈琲豆選びと、おいしい淹れ方の基本をご紹介します。</p>
           <ul class="button">
@@ -80,7 +76,7 @@
       </div>
     </section>
     <section class="complement">
-      <h3>淹れ方が知りたい場合は、予約が安心です</h3>
+      <h3>淹れ方を教わりたい場合は、予約が安心です</h3>
       <p>
         当店まで足を運べる方には、お好みの味になるように、店主が豆を選び、焙煎度を調整します。<br />
         そして、珈琲の淹れ方を直接お教えします。<br /><br />
@@ -157,7 +153,7 @@
           </p>
         </div>
       </div>
-      <img src="./image/googlemap.png" alt="map" />
+      <img class="map" src="./image/googlemap.png" alt="map" />
     </section>
     <!-- <section>
       <h3>おいしい淹れ方</h3>

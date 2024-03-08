@@ -1,142 +1,57 @@
-html {
-  font-size: 15px;
-  line-height: 1.6rem;
-  font-family: "Noto Sans JP", sans-serif;
-  background: url("../image/background.png");
-}
-
-.clear_text {
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-}
-
-button {
-  width: 230px;
-  height: 50px;
-  border-radius: 30px;
-  background-color: #b7b17f;
-  text-align: center;
-  margin: 0.5em 0;
-}
-button:hover {
-  opacity: 0.8;
-}
-
-button.article,
-button.youtube {
-  display: block;
-  width: 230px;
-  height: 50px;
-  border-radius: 30px;
-  background-color: #b7b17f;
-  text-align: center;
-  margin: 0.5em 0;
-}
-
-button.article::before {
-  content: url("../image/ion_book.png");
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0.7em;
-}
-
-button.youtube::before {
-  content: url("../image/mdi_youtube.png");
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0.6em;
-}
-
-button.reserve::before {
-  content: url("../image/calender.png");
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0.6em;
-}
-
-ul.square {
-  margin: 0 0 1em 2em;
-  li {
-    line-height: 2em;
-    list-style: square;
-  }
-}
-
-input {
-  border: 1px solid #333;
-  border-radius: 10px;
-  padding: 0.5em;
-}
-
-img {
-  vertical-align: bottom;
-}
-
-@media (max-width: 768px) {
-  //header
+@media (min-width: 1200px) {
+  // header
   header {
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
     div {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
       // ロゴの表示
       h1 {
-        position: absolute;
-        top: 2em;
-        left: 2em;
+        position: relative;
+        bottom: 280px;
         width: 112px;
         height: 112px;
-        background: url("../image/logo_s.png");
+        background: url("../image/logo.png");
         color: #222;
         cursor: pointer;
-        // margin-right: 3em;
+        margin-right: 3em;
       }
       h1:hover {
         opacity: 0.9;
       }
       img#fv {
-        margin-top: 0px;
-        width: 100%;
+        margin-right: 3em;
       }
       img#beans {
-        display: none;
+        position: relative;
+        bottom: -7em;
+        width: 260px;
+        height: 400px;
+        z-index: -1;
       }
-    }
-    > div::after {
-      display: block;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-      font-family: a-otf-ryumin-pr6n, serif;
-      margin: 1em 0;
-      content: "珈琲豆のオンライン通販、はじめました。";
     }
     menu {
-      margin: 0;
-      padding: 0;
-      line-height: 4em;
+      width: 100%;
+      margin: 1em 0 1em 12em;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
       li {
-        color: #f3f0d3;
-        display: block;
-        height: 4em;
         list-style: none;
-        cursor: pointer;
+        display: block;
         text-align: center;
-        background-color: #1e1e1e;
-        border-bottom: 1px solid #f3f0d350;
-      }
-      li img {
-        display: none;
-      }
-      li br {
-        display: none;
+        padding: 35px 2em 15px;
+        cursor: pointer;
       }
       li:hover {
-        opacity: 0.9;
+        background: url(../image/bean.png) no-repeat;
+        background-position: top center;
       }
     }
   }
-  // concept
+
   section#concept {
     width: 100%;
     background-color: #1e1e1e;
@@ -145,72 +60,61 @@ img {
     color: #f3f0d3;
     padding: 20px;
     .column {
-      width: 100%;
-      text-align: center;
+      width: 840px;
+      margin: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
       img {
-        width: 166px;
         cursor: pointer;
       }
       img:hover {
         opacity: 0.9;
       }
-      p {
-        text-align: left;
-      }
-      br {
-        display: none;
-      }
     }
     h2 {
       margin: 30px;
-      font-size: 2.3rem;
-      line-height: 3.3rem;
+      font-size: 2.3em;
     }
     p {
       font-size: 1em;
       margin: 30px;
     }
   }
-  // commitment
+
   section.commitment {
-    margin: 30px;
-    br {
-      display: none;
-    }
+    width: 840px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     div {
-      width: 100%;
+      width: 400px;
       h3 {
-        text-align: center;
         font-size: 30px;
-        line-height: 1.6em;
+        line-height: 60px;
         margin-bottom: 30px;
         border-bottom: 2px solid #817a3a;
       }
       p {
-        text-align: left;
         margin-bottom: 30px;
       }
     }
     img {
       width: 400px;
     }
-    img.commitment_l {
-      display: none;
-    }
-    ul.square li {
-      font-weight: 600;
-      line-height: 2.4em;
+    > *:last-child {
+      margin-left: 40px;
     }
     ul.button li {
       display: flex;
       justify-content: flex-end;
     }
   }
-
   section.complement {
-    margin: 30px;
+    width: 840px;
+    margin: 60px auto;
     h3 {
-      text-align: center;
       font-size: 30px;
       line-height: 60px;
       margin-bottom: 30px;
@@ -225,24 +129,21 @@ img {
   }
 
   section#products {
-    margin: 30px;
+    width: 1200px;
+    margin: 60px auto;
     h3 {
-      text-align: center;
       font-size: 30px;
       line-height: 60px;
       margin-bottom: 30px;
       border-bottom: 2px solid #817a3a;
     }
     .products {
-      overflow: auto;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
       margin: 30px 0;
       div.product {
         width: 250px;
-        margin: 0 10px;
         img {
           cursor: pointer;
         }
@@ -262,32 +163,42 @@ img {
           padding: 0 0.4em;
           cursor: pointer;
         }
-        p {
-          margin-bottom: 30px;
-        }
       }
+    }
+    .products::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 64px;
+      background: url(../image/arrow_l.png) no-repeat;
+      cursor: pointer;
+    }
+    .products::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 64px;
+      background: url(../image/arrow_r.png) no-repeat;
+      cursor: pointer;
     }
   }
 
   section#info {
-    margin: 30px;
+    width: 1200px;
+    margin: 60px auto;
     h3 {
-      text-align: center;
       font-size: 30px;
       line-height: 60px;
       margin: 0 0 30px 0;
       border-bottom: 2px solid #817a3a;
     }
     > div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
       margin: 30px 0;
-      text-align: center;
       .store_image {
-        display: flex;
-        justify-content: center;
-        img {
-          width: 90%;
-          max-width: 480px;
-        }
+        margin-right: 60px;
       }
     }
     p {
@@ -304,20 +215,17 @@ img {
     p.icon img:hover {
       opacity: 0.8;
     }
-    img.map {
-      width: 100%;
-    }
   }
 
   footer {
     background-color: #1e1e1e;
     color: #f3f0d3;
     > div.main_foot_menu {
-      margin: 0 30px;
+      width: 600px;
+      margin: 0 auto;
       padding: 60px 0 0 0;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       align-items: flex-start;
       .logo_f {
         width: 80px;
@@ -348,11 +256,15 @@ img {
       }
     }
     > div.sub_foot_menu {
-      margin: 0 30px;
+      width: 800px;
+      margin: 0 auto;
       text-align: center;
       ul {
         border-top: 1px solid #f3f0d350;
         border-bottom: 1px solid #f3f0d350;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         li {
           margin: 1em 4em;
           cursor: pointer;
