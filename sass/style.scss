@@ -175,6 +175,7 @@ img {
   // commitment
   section.commitment {
     margin: 30px;
+    text-align: center;
     br {
       display: none;
     }
@@ -193,7 +194,8 @@ img {
       }
     }
     img {
-      width: 400px;
+      width: 100%;
+      max-width: 400px;
     }
     img.commitment_l {
       display: none;
