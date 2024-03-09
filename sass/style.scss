@@ -200,9 +200,12 @@ img {
     img.commitment_l {
       display: none;
     }
-    ul.square li {
-      font-weight: 600;
-      line-height: 2.4em;
+    ul.square {
+      text-align: left;
+      li {
+        font-weight: 600;
+        line-height: 2.4em;
+      }
     }
     ul.button li {
       display: flex;
