@@ -237,15 +237,18 @@ img {
     overflow: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     margin: 30px 0;
   }
   section#products .products div.product {
-    width: 250px;
+    width: 45%;
+    max-width: 300px;
+    min-width: 250px;
     margin: 0 10px;
   }
   section#products .products div.product img {
+    width: 100%;
     cursor: pointer;
   }
   section#products .products div.product img:hover {

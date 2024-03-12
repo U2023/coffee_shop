@@ -103,7 +103,7 @@
     margin-bottom: 30px;
   }
   section.commitment img {
-    width: 400px;
+    width: 40%;
     flex-shrink: 0;
   }
   section.commitment > *:last-child {
@@ -141,15 +141,18 @@
     overflow: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     margin: 30px 0;
   }
   section#products .products div.product {
-    width: 250px;
+    width: 40%;
+    max-width: 350px;
+    min-width: 250px;
     margin: 0 10px;
   }
   section#products .products div.product img {
+    width: 100%;
     cursor: pointer;
   }
   section#products .products div.product img:hover {
