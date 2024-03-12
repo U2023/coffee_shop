@@ -1,7 +1,7 @@
 @media (min-width: 1200px) {
   // header
   header {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     div {
       display: flex;
@@ -34,7 +34,8 @@
     }
     menu {
       width: 100%;
-      margin: 1em 0 1em 12em;
+      margin: 1em 0 1em 0;
+      padding-left: 220px;
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
@@ -129,7 +130,7 @@
   }
 
   section#products {
-    width: 1200px;
+    width: 1160px;
     margin: 60px auto;
     h3 {
       font-size: 30px;
@@ -184,7 +185,7 @@
   }
 
   section#info {
-    width: 1200px;
+    width: 1160px;
     margin: 60px auto;
     h3 {
       font-size: 30px;
@@ -214,6 +215,9 @@
     }
     p.icon img:hover {
       opacity: 0.8;
+    }
+    img.map {
+      width: 100%;
     }
   }
 
